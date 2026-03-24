@@ -22,7 +22,14 @@
 }
 
 body {
-    background-color: var(--md-sys-color-background);
+    background: 
+        radial-gradient(circle at top left, #d3e3fd 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #fce8e6 0%, transparent 40%),
+        radial-gradient(circle at bottom left, #e6f4ea 0%, transparent 40%),
+        radial-gradient(circle at top right, #fef7e0 0%, transparent 60%),
+        #f5f7f8;
+    background-size: cover;
+    background-attachment: fixed;
     color: var(--md-sys-color-on-surface);
     line-height: 1.5;
 }
@@ -68,6 +75,8 @@ body {
     background-color: var(--md-sys-color-primary-container);
     color: var(--md-sys-color-on-primary-container);
     font-size: 28px;
+    background: rgba(211, 227, 253, 0.8);
+    backdrop-filter: blur(10px);
     box-shadow: var(--md-elevation-1);
     text-decoration: none;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -82,37 +91,44 @@ body {
     display: inline-block;
     padding: 6px 16px;
     border-radius: 8px;
-    background-color: var(--md-sys-color-surface-variant);
+    background-color: rgba(225, 227, 225, 0.7);
     color: var(--md-sys-color-on-surface-variant);
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 12px;
 }
 
-/* Cards */
+/* Cards (Global Frosted Glass) */
 .md-card {
-    background-color: var(--md-sys-color-surface);
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(28px) saturate(150%);
+    -webkit-backdrop-filter: blur(28px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: var(--md-shape-corner-extra-large);
     padding: 32px;
-    box-shadow: var(--md-elevation-1);
-    transition: box-shadow 0.2s ease;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
-.md-card:hover { box-shadow: var(--md-elevation-2); }
+.md-card:hover { 
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.1); 
+    transform: translateY(-2px);
+}
 
-.md-divider { border: 0; height: 1px; background: var(--md-sys-color-surface-variant); margin: 24px 0; }
+.md-divider { border: 0; height: 1px; background: rgba(0,0,0,0.1); margin: 24px 0; }
 
 /* Header */
 .header {
     position: fixed;
     top: 0; left: 0; width: 100%;
     padding: 20px 5%;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    box-shadow: var(--md-elevation-1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .logo {
@@ -140,7 +156,7 @@ body {
 }
 
 .navbar a:hover, .navbar a.active {
-    background-color: var(--md-sys-color-primary-container);
+    background-color: rgba(211, 227, 253, 0.8);
     color: var(--md-sys-color-on-primary-container);
 }
 
@@ -151,29 +167,18 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 80px;
-    background: 
-        radial-gradient(circle at top left, #d3e3fd 0%, transparent 40%),
-        radial-gradient(circle at bottom right, #fce8e6 0%, transparent 40%),
-        radial-gradient(circle at bottom left, #e6f4ea 0%, transparent 40%),
-        radial-gradient(circle at top right, #fef7e0 0%, transparent 40%),
-        #ffffff;
 }
 
 .hero-card {
     max-width: 800px;
     text-align: center;
     padding: 56px 40px;
-    background: rgba(255, 255, 255, 0.25) !important;
-    backdrop-filter: blur(30px) saturate(150%);
-    -webkit-backdrop-filter: blur(30px) saturate(150%);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.1) !important;
 }
 .hero-chip {
     display: inline-block;
     padding: 8px 20px;
     border-radius: 100px;
-    background: #e8f0fe;
+    background: rgba(232, 240, 254, 0.8);
     color: #1967d2;
     font-weight: 500;
     margin-bottom: 24px;
@@ -196,14 +201,15 @@ body {
 .skill-card { display: flex; flex-direction: column; align-items: flex-start; }
 .skill-card i { font-size: 40px; margin-bottom: 16px; }
 .skill-card h3 { font-size: 18px; font-weight: 500; margin-bottom: 16px; }
-.md-progress-track { width: 100%; height: 8px; background: var(--md-sys-color-surface-variant); border-radius: 4px; overflow: hidden; }
+.md-progress-track { width: 100%; height: 8px; background: rgba(225, 227, 225, 0.5); border-radius: 4px; overflow: hidden; }
 .md-progress-fill { height: 100%; border-radius: 4px; }
 
 /* Projects Grid */
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
 .project-card { display: flex; flex-direction: column; align-items: flex-start; }
-.project-icon { width: 64px; height: 64px; border-radius: 16px; background: #e8f0fe; color: #1967d2; display: flex; align-items: center; justify-content: center; font-size: 32px; margin-bottom: 24px; }
-.project-card h3 { font-size: 22px; font-weight: 500; margin-bottom: 12px; }
+.project-icon { width: 64px; height: 64px; border-radius: 16px; background: rgba(232, 240, 254, 0.8); color: #1967d2; display: flex; align-items: center; justify-content: center; font-size: 32px; margin-bottom: 24px; }
+/* Force uniform height on project titles so chips align completely */
+.project-card h3 { font-size: 22px; font-weight: 500; margin-bottom: 12px; min-height: 64px; display: flex; align-items: flex-start; }
 .project-card p { color: var(--md-sys-color-on-surface-variant); margin-bottom: 0; font-size: 16px; }
 
 /* Contact Layout */
@@ -218,16 +224,17 @@ body {
 .md-input-group input, .md-input-group textarea {
     width: 100%;
     padding: 16px;
-    border: 1px solid var(--md-sys-color-surface-variant);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: var(--md-shape-corner-large);
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    background: #fafafa;
+    background: rgba(255, 255, 255, 0.4);
 }
 .md-input-group input:focus, .md-input-group textarea:focus {
     border-color: var(--md-sys-color-primary);
     box-shadow: 0 0 0 2px var(--md-sys-color-primary-container);
+    background: rgba(255, 255, 255, 0.7);
 }
 .md-input-group label {
     position: absolute;
@@ -243,7 +250,7 @@ body {
 .md-input-group textarea + label { top: 24px; }
 .md-input-group input:focus + label, .md-input-group input:valid + label,
 .md-input-group textarea:focus + label, .md-input-group textarea:valid + label {
-    top: -8px; font-size: 12px; color: var(--md-sys-color-primary); background: #fafafa; border-radius: 4px;
+    top: -10px; font-size: 12px; color: var(--md-sys-color-primary); background: transparent; border-radius: 4px; font-weight: 500;
 }
 
 .footer { text-align: center; padding: 24px; color: var(--md-sys-color-on-surface-variant); margin-top: 40px; }
