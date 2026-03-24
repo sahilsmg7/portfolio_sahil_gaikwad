@@ -13,7 +13,7 @@ body
     color: black;
     /* background: #081b29; */
     /* background: orangered; */
-    background: lavenderblush;
+    background: #f4f6fb;
 }
 
 .header
@@ -23,7 +23,8 @@ body
     left: 0;
     width: 100%;
     padding: 20px 10px;
-    background: #051129;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     /* background: #008080; */
     display: flex;
     justify-content: space-between;
@@ -35,7 +36,7 @@ body
 {
     position: relative;
     font-size: 30px;
-    color: white;
+    color: #1a1a1a;
     text-decoration: none;
     font-weight: 600;
     /* margin-left: 35px;
@@ -47,7 +48,7 @@ body
 .navbar a{
     display: inline-block;
     font-size: 25px;
-    color: white;
+    color: #1a1a1a;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -57,7 +58,7 @@ body
     animation-delay: calc(.2s * var(--i));
 }
 .navbar a:hover{
-    color: orangered;
+    color: #0056b3;
     font-weight: bolder;
 }
 .home{
@@ -89,7 +90,7 @@ body
     animation-delay: .7s;
 }
 .home-content h3 span{
-    color:#0ef;
+    color: #0056b3;
 }
 .home-content h1{
     font-size: 56px;
@@ -112,44 +113,41 @@ body
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid #e0e0e0;
+    background: #ffffff;
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: #0056b3;
     text-decoration: none;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
     margin: 30px 15px 30px 0;
-    /* box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef; */
+    /* box-shadow: 0 4px 10px rgba(0,86,179,0.2); */
 }
 .home-sci a:hover{
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    background: #0056b3;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0,86,179,0.3);
 }
 .btn-box{
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: #0056b3;
     border-radius: 40px;
     font-size: 16px;
-    color: #081b29;
+    color: #ffffff;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
+    box-shadow: 0 4px 10px rgba(0,86,179,0.2);
 }
 .btn-box:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan,;
+    box-shadow: 0 6px 15px rgba(0,86,179,0.3);
 }
 
 .image {
@@ -176,25 +174,25 @@ body
     font-size: 60px;
 }
 .about-text h2 span{
-    color: #0ef;
+    color: #0056b3;
 }
 .about-text h4{
     font-size: 29px;
     font-weight: 600;
-    color: #fff;
+    color: #1a1a1a;
     /* color: #862e9c; */
     line-height: 1.4;
     margin: 15px 0 30px;
 }
 .about-text p{
-    color: aliceblue;
+    color: #444444;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem
 }
 
 #services{
-    color: aliceblue;
+    color: #444444;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -205,7 +203,7 @@ body
     padding-bottom: 70px;
 }
 .sub-title span{
-    color: #0ef;
+    color: #0056b3;
 }
 .container{
     padding: 90px;
@@ -224,8 +222,8 @@ body
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7,
-                1px 1px 40px #0053b8f7;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background: #ffffff;
 }
 .services-list div i{
     font-size: 50px;
@@ -247,23 +245,22 @@ body
 .read{
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: #0056b3;
     border-radius: 40px;
     font-size: 16px;
-    color: #001b29;
+    color: #ffffff;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
+    box-shadow: 0 4px 10px rgba(0,86,179,0.2);
 }
 .read:hover{
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    background: #0056b3;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0,86,179,0.3);
 }
 .services-list div:hover{
     transform: translateY(-10px);
@@ -323,7 +320,7 @@ section{
 }
 .Technical-bars .bar .progress-line span{
     height: 100%;
-    background-color: #0ef;
+    background-color: #0056b3;
     position: absolute;
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -349,7 +346,7 @@ section{
     position: absolute;
     padding: 1px 8px;
     background-color: #000;
-    color: #fff;
+    color: #1a1a1a;
     font-size: 12px;
     border-radius: 3px;
     top: -28px;
@@ -414,7 +411,7 @@ section{
 }
 .radial-bars .radial-bar .progress-bar{
     stroke-width: 10;
-    stroke: black;
+    stroke: #e0e0e0;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -429,7 +426,7 @@ section{
 }
 .path{
     stroke-width: 10;
-    stroke: #0ef;
+    stroke: #0056b3;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -494,7 +491,7 @@ section{
     text-align: center;
 }
 .main-text h2 span{
-    color: #0ef;
+    color: #0056b3;
 }
 
 .portfolio-content{
@@ -528,7 +525,7 @@ section{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
+    background: linear-gradient(rgba(244,246,251,0.9), rgba(255,255,255,1));
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -543,18 +540,18 @@ section{
     transition: height 0.5s;
 }
 .layer h5{
-    color: #000;
+    color: #0056b3;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 .layer p{
-    color: #000;
+    color: #333;
     font-size: 1rem;
     line-height: 1.8;
 }
 .layer i{
-    color: #ff004f;
+    color: #0056b3;
     margin-top: 20px;
     font-size: 20px;
     background: #fff;
@@ -585,7 +582,7 @@ section{
     text-align: center;
 }
 .contact-text h2 span{
-    color: #0ef;
+    color: #0056b3;
 }
 .contact-text h4{
     margin: 15px 0;
@@ -608,14 +605,14 @@ section{
 }
 .contact-list i{
     display: inline-block;
-    color: #0ef;
+    color: #0056b3;
     font-size: 20px;
     font-weight: 600;
     transition: all .40s ease;
 }
 .contact-list li a:hover{
     transform: scale(1.01) translateY(-5px);
-    color: #0ef;
+    color: #0056b3;
 }
 .contact-icons i{
     display: inline-flex;
@@ -624,10 +621,11 @@ section{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid #e0e0e0;
+    background: #ffffff;
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: #0056b3;
     text-decoration: none;
     margin: 30px 15px 30px 0;
     transition: .5s ease;
@@ -636,7 +634,7 @@ section{
     animation-delay: calc(.2s * var(--i));
 }
 .contact-icons i:hover{
-    background: #0ef;
+    background: #0056b3;
     color: #000;
     box-shadow: 0  0 20px #0ef;
 }
@@ -648,7 +646,8 @@ section{
     outline: none;
     width: 90%;
     padding: 18px;
-    background: #555557;
+    background: #ffffff;
+    border: 1px solid #ddd;
     color: #000;
     font-size: 1rem;
     font-weight: 600;
@@ -662,30 +661,30 @@ section{
 .contact-form form .send{
     display: inline-block;
     padding: 14px 60px;
-    background: #0ef;
+    background: #0056b3;
     border-radius: 40px;
     font-size: 18px;
-    color: #001b29;
+    color: #ffffff;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
+    box-shadow: 0 4px 10px rgba(0,86,179,0.2);
     margin: 50px 0px;
 }
 .contact-form form .send:hover{
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    background: #0056b3;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0,86,179,0.3);
 }
 .last-text p{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: rgb(7, 85, 91);
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
     font-weight: 300;
     margin-top: 70px;
 }
@@ -696,7 +695,7 @@ section{
 }
 .top i{
     color: #000;
-    background: #0ef;
+    background: #0056b3;
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
@@ -752,5 +751,5 @@ section{
 
 ::placeholder
 {
-    color: white;
+    color: #1a1a1a;
 }
